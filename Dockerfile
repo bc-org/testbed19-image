@@ -13,7 +13,7 @@ RUN micromamba install --yes --name base --channel conda-forge \
     pip && \
     git clone https://github.com/dcs4cop/xcube.git && \
     cd xcube && \
-    git checkout 45df29ab111a && \
+    git checkout dbba58958e10 && \
     micromamba install --yes --name base --file environment.yml && \
     pip install --no-deps --verbose --editable . && \
     micromamba clean --yes --all --force-pkgs-dirs
