@@ -1,3 +1,7 @@
+# Version 0.0.8
+
+Use commit 8c32ba668705 (2023-11-24).
+
 # Version 0.0.7
 
 Use commit 9d2c9af05314 (2023-11-14).

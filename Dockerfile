@@ -8,13 +8,20 @@ LABEL description="xcube OGC Testbed 19 server"
 # use micromamba-installed git.
 ARG MAMBA_DOCKERFILE_ACTIVATE=1
 
+# NB: we currently skip installing xcube-ogccov dependencies,
+# since it so far has none other than xcube.
 RUN micromamba install --yes --name base --channel conda-forge \
     git \
     pip && \
     git clone https://github.com/dcs4cop/xcube.git && \
     cd xcube && \
-    git checkout 9d2c9af05314 && \
+    git checkout 8c32ba668705 && \
     micromamba install --yes --name base --file environment.yml && \
+    pip install --no-deps --verbose --editable . && \
+    cd .. && \
+    git clone https://github.com/dcs4cop/xcube-ogccov.git && \
+    cd xcube-ogccov && \
+    git checkout 5dc7349c07e7 && \
     pip install --no-deps --verbose --editable . && \
     micromamba clean --yes --all --force-pkgs-dirs
 
