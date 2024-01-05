@@ -1,3 +1,7 @@
+# Version 0.0.11
+
+Use commit de5e27a4fe6c (2024-01-05).
+
 # Version 0.0.10
 
 Use commit 11ff37f8b3ab (2023-12-14).
