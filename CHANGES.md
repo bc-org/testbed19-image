@@ -1,3 +1,8 @@
+# Version 0.0.12
+
+Use commit 110709908294 of xcube (on master branch) and
+commit 0c66025aab04 of xcube-ogccov.
+
 # Version 0.0.11
 
 Use commit de5e27a4fe6c (2024-01-05).
